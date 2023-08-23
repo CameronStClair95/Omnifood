@@ -113,6 +113,21 @@ body::-webkit-scrollbar {
 }
 
 /* =======================
+   UTILITY CLASSES
+   ======================= */
+.margin-right-sm {
+  margin-right: 1.6rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* =======================
  TYPOGRAPHY
  ======================= */
 
@@ -196,7 +211,7 @@ Featured In
   font-size: 2rem;
   border-radius: 4rem;
   text-decoration: none;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
   font-weight: 600;
 }
 
@@ -223,4 +238,33 @@ Featured In
   background-color: #cf711f;
   box-shadow: inset 0 0 0 3px #fff;
   color: #fff;
+}
+
+.main-nav-link.nav-cta {
+  padding: 1.2rem 2.4rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  border-radius: 4rem;
+  background-color: #e67e22;
+}
+
+.main-nav-list li:last-child .main-nav-link.nav-cta:hover {
+  background-color: #cf711f;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-bottom: 1px solid #e67e22;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #e67e22;
+  border-bottom: 1px solid transparent;
 }
